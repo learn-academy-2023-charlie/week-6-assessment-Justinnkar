@@ -13,6 +13,7 @@
 // --------------------1) Create a function that takes in an array of objects and returns an array with a sentence about each person with their name capitalized.
 
 // a) Create a test with an expect statement using the variable provided.
+//test
 
 const hitchhikersCharacters = [
   { name: "ford prefect", occupation: "a hitchhiker" },
