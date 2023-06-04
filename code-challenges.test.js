@@ -13,16 +13,28 @@
 // --------------------1) Create a function that takes in an array of objects and returns an array with a sentence about each person with their name capitalized.
 
 // a) Create a test with an expect statement using the variable provided.
-//test
 
-const hitchhikersCharacters = [
-  { name: "ford prefect", occupation: "a hitchhiker" },
-  { name: "zaphod beeblebrox", occupation: "president of the galaxy" },
-  { name: "arthur dent", occupation: "a radio employee" }
-]
-// Expected output: ["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."]
+Describe("createSentence", () => 
+{
+  const hitchhikersCharacters = [
+    { name: "ford prefect", occupation: "a hitchhiker" },
+    { name: "zaphod beeblebrox", occupation: "president of the galaxy" },
+    { name: "arthur dent", occupation: "a radio employee" }
+  ]
+it("takes in an array of objects and returns an array with a sentence about each person with their name capitalized.", () => {
+  expect(createSentence).toEqual["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."]
+})
+})
+
+/*
+FAIL  ./code-challenges.test.js
+  ● Test suite failed to run
+
+    ReferenceError: Describe is not defined
+*/
 
 // b) Create the function that makes the test pass.
+
 
 // --------------------2) Create a function that takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3.
 
